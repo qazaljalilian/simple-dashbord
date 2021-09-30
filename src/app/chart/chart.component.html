@@ -1,0 +1,8 @@
+<div class="main-div" >
+  <div class="chart-container" *ngFor="let month of months">
+    <div class="chart" [ngStyle]="getHeight(month)">
+{{numberOfContracts[month- 1]}}
+    </div>
+    <span>{{month}}</span>
+  </div>
+</div>
